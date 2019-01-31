@@ -22,7 +22,10 @@ easyHTTP.prototype.get = function(url, callback) {
 
 // POST request
 easyHTTP.prototype.post = function(url, data, callback) {
-  
+  this.http.open('POST', url, true);
+  this.http.setRequestHeader('Content-type', 'application/json')
+
+  this.send(JSON.stringify(data));
 }
 // PUT request
 // DELETE request
