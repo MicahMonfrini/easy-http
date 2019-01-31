@@ -21,5 +21,8 @@ easyHTTP.prototype.get = function(url, callback) {
 }
 
 // POST request
+easyHTTP.prototype.post = function(url, data, callback) {
+  
+}
 // PUT request
 // DELETE request
