@@ -19,10 +19,10 @@ const data = {
 
 // Add new post
 
-http.post('https://jsonplaceholder.typicode.com/posts', data, function(err, posts) {
+http.post('https://jsonplaceholder.typicode.com/posts', data, function(err, post) {
   if(err) {
     console.log(err)
   } else {
-    console.log(posts)
+    console.log(post)
   }
 });
